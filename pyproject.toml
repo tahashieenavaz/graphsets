@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "graphsets"
-version = "0.0.1"
+version = "0.0.11"
 authors = [
   { name="Taha Shieenavaz", email="tahashieenavaz@gmail.com" },
 ]
@@ -22,11 +22,11 @@ classifiers = [
 dependencies = ["numpy", "torch"]
 keywords = ["graph", "graph datasets", "graph attention networks", "gat", "graph deep learning"]
 license = { file = "LICENSE" }
-urls = { Homepage="https://github.com/tahashieenavaz/graphdatasets", Repository="https://github.com/tahashieenavaz/graphdatasets", Documentation="https://github.com/tahashieenavaz/graphdatasets#readme" }
+urls = { Homepage="https://github.com/tahashieenavaz/graphsets", Repository="https://github.com/tahashieenavaz/graphsets", Documentation="https://github.com/tahashieenavaz/graphsets#readme" }
 
 [tool.setuptools.packages.find]
 where = ["."]
 exclude = ["tests*", "docs*"]
 
 [tool.setuptools.package-data]
-graphdatasets = ["*.md", "*.txt"]
+graphsets = ["*.md", "*.txt"]
