@@ -3,10 +3,7 @@ import numpy
 
 
 class CoraDataset:
-    def __init__(self):
-        pass
-
-    def load(path: str):
+    def load(self, path: str):
         idx_features_labels = numpy.genfromtxt(f"{path}/cora.content", dtype=str)
         features = torch.tensor(idx_features_labels[:, 1:-1].astype(numpy.float32))
         classes = {label: i for i, label in enumerate(set(idx_features_labels[:, -1]))}
